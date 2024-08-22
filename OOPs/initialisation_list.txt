@@ -1,0 +1,18 @@
+CONSTRUCTOR INITIALISATION LIST -->
+# Detailed Explanation of Member Initialization
+# Order of Initialization:
+
+  When an object is created, the constructor’s initializer list is processed first.
+  Each member variable is initialized in the order of their declaration in the class, regardless of the order in the initializer list.
+  
+# No Re-initialization:
+
+  If a member is initialized using the initializer list, it is directly initialized with the value provided.
+  If you try to reassign a value to a const or reference member in the constructor body, it is not allowed because const cannot be reassigned, and references must be initialized when created.
+
+
+IMPORTANT NOTES --->
+
+The member INITIALIZER LIST is used to initialize members at the time of their creation before the constructor body starts executing. This is why it works perfectly for const and reference members, which must be initialized when they are created.
+
+The CONSTRUCTOR body executes after the member variables have already been initialized. Therefore, trying to initialize const or reference members in the constructor body is either impossible or leads to errors because their initialization must occur at the point of creation, not afterward
