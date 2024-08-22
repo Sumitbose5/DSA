@@ -5,6 +5,10 @@ using namespace std;
 class Animal{
   public:
 
+  Animal(){
+    cout << "Animal Constructor Called.." << endl;
+  }
+
   void eat(){
     cout << "Eating.." << endl;
   }
@@ -17,6 +21,10 @@ class Animal{
 // Derived / Child Class
 class Dog : public Animal{
   public:
+
+  Dog(){
+    cout << "Dog Constructor Called.." << endl;
+  }
 
   void bark(){
     cout << "Barking.." << endl;
