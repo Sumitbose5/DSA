@@ -1,3 +1,7 @@
+/* In C++, the friend keyword is used to grant a non-member function or another class access to the private and protected members of a class. It breaks the usual encapsulation rules by allowing external functions or classes to access the internals of a class.
+
+Friend Function: A non-member function that has access to the private and protected members of a class */
+
 #include <iostream>
 using namespace std;
 
